@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yurii | Vibe Coding Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Yurii home">
+        <span class="brand-mark">Y</span>
+        <span>Yurii</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#works">作品</a>
+        <a href="#social">抖音</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="year">2026</p>
+          <h1>在 AI 时代，用 Vibe Coding 将审美落地为产品。</h1>
+          <p class="subhead">做一个有审美的 Builder：用 AI 实现自己喜欢的、有审美吸引力的、有趣的产品。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#works">探索作品</a>
+            <a class="button ghost" href="#contact">直接联系</a>
+          </div>
+        </div>
+
+        <div class="visual-stack" aria-label="Visual moodboard">
+          <img class="reference-shot" src="assets/material-1.png" alt="White Day visual reference" />
+          <div class="paper-card paper-top">
+            <span class="tiny">VIBE CODING</span>
+            <strong>审美 / 产品 / AI</strong>
+            <span>builder notes</span>
+          </div>
+          <div class="paper-card paper-bottom">
+            <span class="tiny">wechat</span>
+            <strong>_yurii07</strong>
+            <span>copy friendly</span>
+          </div>
+          <div class="signature">Yurii</div>
+        </div>
+      </section>
+
+      <section class="playground-section" id="works">
+        <div class="section-title">
+          <p class="year">works gallery</p>
+          <h2>驾驶小车撞一撞作品磁贴</h2>
+        </div>
+
+        <div class="playground" id="playground" tabindex="0" aria-label="Interactive portfolio playground">
+          <div class="track-shadow"></div>
+          <div class="intro-float" aria-hidden="true">
+            <span class="intro-cn">你好，我是陈俊妤。</span>
+            <span class="intro-en">hi，i‘m yuri</span>
+          </div>
+          <article class="world-tile tile-hero" data-title="起点" data-note="欢迎来到我的小世界，用小车探索吧！">
+            <span>01</span>
+            <strong>起点</strong>
+          </article>
+          <a class="world-tile tile-gallery" href="#video-flow" data-title="视觉流" data-note="直达视频流，有声播放你的产品 Demo 与审美瞬间。" data-target="#video-flow">
+            <span>02</span>
+            <strong>视觉流</strong>
+          </a>
+          <article class="world-tile tile-social" data-title="社交入口" data-note="醒目的抖音跳转与私信路径，减少转化阻力。" data-target="#social">
+            <span>03</span>
+            <strong>社交入口</strong>
+          </article>
+          <article class="world-tile tile-contact" data-title="联系路径" data-note="微信 ID、站内私信、一键触达，保持沟通扁平。" data-target="#contact">
+            <span>04</span>
+            <strong>联系路径</strong>
+          </article>
+          <button class="car" id="car" type="button" aria-label="Draggable portfolio car">
+            <span class="car-body"></span>
+            <span class="wheel left"></span>
+            <span class="wheel right"></span>
+          </button>
+          <div class="hint" id="hint">拖动小车，或用方向键探索</div>
+        </div>
+
+        <aside class="info-panel" id="infoPanel" aria-live="polite">
+          <p class="year">selected</p>
+          <h3>起点</h3>
+          <p>欢迎来到我的小世界，用小车探索吧！</p>
+        </aside>
+      </section>
+
+      <section class="gallery">
+        <figure class="gallery-large">
+          <img src="assets/material-1.png" alt="Reference collage style" />
+          <figcaption>white day inspired visual language</figcaption>
+        </figure>
+        <div class="gallery-copy">
+          <p class="year">aesthetic proof</p>
+          <h2>少写解释，多给访客看到“做出来”的质感。</h2>
+          <p>作品区适合放产品 Demo、视频片段、截图、审美灵感和构建过程。整个版式保留包装摄影的留白、压纸感与黑色小字，同时加入可玩的空间导航。</p>
+        </div>
+      </section>
+
+      <section class="video-flow" id="video-flow">
+        <div class="video-copy">
+          <p class="year">visual stream</p>
+          <h2>视觉流</h2>
+          <p>点击作品区的视觉流磁贴后，会直达这里并尝试有声播放。若浏览器拦截有声自动播放，点一下画面即可继续播放。</p>
+        </div>
+        <div class="video-stage">
+          <video id="heroVideo" src="assets/video-1.mp4" playsinline controls preload="metadata"></video>
+          <div class="video-switcher" aria-label="视频切换">
+            <button class="video-tab active" type="button" data-video="assets/video-1.mp4">视频 01</button>
+            <button class="video-tab" type="button" data-video="assets/video-2.mp4">视频 02</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-grid" id="social">
+        <a class="contact-card douyin" href="https://v.douyin.com/HxuZEVyx-pg/" target="_blank" rel="noopener" aria-label="前往我的抖音主页">
+          <span>抖音主页</span>
+          <img class="douyin-photo" src="assets/douyin-profile.jpg" alt="抖音主页展示图" />
+          <strong>前往我的抖音主页</strong>
+        </a>
+        <a class="contact-card message" id="contact" href="#contact" aria-label="直达微信二维码">
+          <span>微信二维码</span>
+          <strong>扫码联系</strong>
+          <img id="wechatQr" src="assets/wechat-qr.jpg" alt="微信二维码，扫码添加我为好友" />
+        </a>
+        <div class="contact-card wechat">
+          <span>WeChat ID</span>
+          <button id="copyWechat" type="button">_yurii07</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Yurii / Personal Brand Website</span>
+      <span>AI Builder with taste</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
